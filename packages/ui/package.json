@@ -1,0 +1,19 @@
+{
+  "name": "@tehen/ui",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    "./components/ui/button": "./components/ui/button.tsx",
+    "./lib/utils": "./lib/utils.ts"
+  },
+  "dependencies": {
+    "class-variance-authority": "0.7",
+    "clsx": "2",
+    "tailwind-merge": "2",
+    "lucide-react": "0.468"
+  },
+  "devDependencies": {
+    "typescript": "5.6",
+    "tailwindcss": "4"
+  }
+}

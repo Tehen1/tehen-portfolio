@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: oklch(0.14 0.01 285);
+  --color-foreground: oklch(0.98 0 0);
+  --color-primary: oklch(0.75 0.18 145);
+  --color-primary-fg: oklch(0.15 0.02 145);
+  --radius-lg: 0.5rem;
+  --radius-md: calc(var(--radius-lg) - 2px);
+  --radius-sm: calc(var(--radius-lg) - 4px);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: system-ui, sans-serif;
+}
