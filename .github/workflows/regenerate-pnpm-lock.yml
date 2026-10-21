@@ -44,7 +44,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet -- pnpm-lock.yaml; then
+          if [[ -z "$(git status --porcelain -- pnpm-lock.yaml)" ]]; then
             echo "Lockfile is already up to date."
             exit 0
           fi
